@@ -1,0 +1,164 @@
+
+
+
+
+
+
+html{
+/* 
+
+
+
+1rem = 16px
+50 x 16 = 800px
+10 x 16  = 160px
+
+1rem = 10px
+
+font-size : 100% By Default  16px
+
+16 = 100%;
+8 = 50%;
+
+
+1 x 100/16 = 6.25
+*/
+
+
+    font-size: 62.5%;
+}
+
+
+@import  "./varibles.css";
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--bg-color);
+}
+
+/* header nav */
+header nav{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav Brand */
+
+header nav .Brand {
+   width: 10rem;
+   justify-content: center;
+   align-items: center;
+   margin-left: 5rem; 
+ 
+} 
+
+header nav .Brand:hover {
+    animation-name: BrandLogo;
+    animation-duration: 1s;
+    animation-iteration-count: 15;
+ } 
+
+ @keyframes BrandLogo{
+     0%{
+         transform: rotateX(0deg)
+     }
+
+     100%{
+        transform: rotateX(360deg) 
+     }
+ }
+
+
+
+header nav .Brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;    
+  } 
+
+header nav .right-side {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5rem; 
+    padding: 0rem 1rem;   
+ }
+
+ header nav .right-side .userAuth{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 2rem;
+   border: 0.1rem solid green;
+  }
+
+  header nav .right-side .userAuth a{
+    color: #111;
+    text-decoration: none;
+    background-color: yellow;
+    border-radius: 0.2rem;
+    width: 7rem;
+    text-align: center;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+
+header nav .right-side .userAuth a:hover{
+   border: 0.1rem solid yellow;
+   background-color: transparent;
+   color: #fff;
+   transition: 0.3s ease-in-out;
+}
+
+header nav .right-side .Cart{  
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 2rem;
+}
+
+
+header nav .right-side .Cart:hover{ 
+    animation: cartAnimation;
+    animation-duration: 1s;  
+}
+
+@keyframes cartAnimation{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width:998px){
+
+    html{
+        font-size: 75%;
+    }
+}
+
+@media(max-width:998px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
