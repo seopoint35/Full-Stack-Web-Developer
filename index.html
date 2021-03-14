@@ -11,6 +11,8 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Nav Bar</title>
 </head>
@@ -57,107 +59,144 @@
 
                 <div class="cat-name">
                     <div class="Text">
-                        <p> Top Brand </p> 
+                        <p> Top Brand </p>
                     </div>
 
                     <div class="icon">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                
-                  
+
+
                 </div>
 
             </div>
             <!-- cards inner degine End -->
 
 
-           <!-- cards inner degine start -->
-           <div class="Product-Cat">
-            <div class="cat_image">
-                <img src="./images/laptop.jpg" />
-            </div>
-
-            <div class="cat-name">
-                <div class="Text">
-                    <p> Top Brand </p> 
+            <!-- cards inner degine start -->
+            <div class="Product-Cat">
+                <div class="cat_image">
+                    <img src="./images/laptop.jpg" />
                 </div>
 
-                <div class="icon">
-                    <i class="fas fa-angle-down"></i>
-                </div>
-            
-              
-            </div>
+                <div class="cat-name">
+                    <div class="Text">
+                        <p> Top Brand </p>
+                    </div>
 
-        </div>
-        <!-- cards inner degine End -->
+                    <div class="icon">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
 
-         <!-- cards inner degine start -->
-         <div class="Product-Cat">
-            <div class="cat_image">
-                <img src="./images/LED.jpg" />
-            </div>
 
-            <div class="cat-name">
-                <div class="Text">
-                    <p> Top Brand </p> 
                 </div>
 
-                <div class="icon">
-                    <i class="fas fa-angle-down"></i>
-                </div>
-            
-              
             </div>
+            <!-- cards inner degine End -->
 
-        </div>
-        <!-- cards inner degine End -->
+            <!-- cards inner degine start -->
+            <div class="Product-Cat">
+                <div class="cat_image">
+                    <img src="./images/LED.jpg" />
+                </div>
 
-             <!-- cards inner degine start -->
-             <div class="Product-Cat">
+                <div class="cat-name">
+                    <div class="Text">
+                        <p> Top Brand </p>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- cards inner degine End -->
+
+            <!-- cards inner degine start -->
+            <div class="Product-Cat">
                 <div class="cat_image">
                     <img src="./images/gift.jpg" />
                 </div>
 
                 <div class="cat-name">
                     <div class="Text">
-                        <p> Top Brand </p> 
+                        <p> Top Brand </p>
                     </div>
 
                     <div class="icon">
                         <i class="fas fa-angle-down"></i>
                     </div>
-                
-                  
+
+
                 </div>
 
             </div>
             <!-- cards inner degine End -->
-         <!-- cards inner degine start -->
-         <div class="Product-Cat">
-            <div class="cat_image">
-                <img src="./images/mobile.jpg" />
-            </div>
-
-            <div class="cat-name">
-                <div class="Text">
-                    <p> Top Brand </p> 
+            <!-- cards inner degine start -->
+            <div class="Product-Cat">
+                <div class="cat_image">
+                    <img src="./images/mobile.jpg" />
                 </div>
 
-                <div class="icon">
-                    <i class="fas fa-angle-down"></i>
+                <div class="cat-name">
+                    <div class="Text">
+                        <p> Top Brand </p>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+
+
                 </div>
-            
-              
+
+            </div>
+            <!-- cards inner degine End -->
+        </div>
+
+
+        <!-- slick slider start -->
+        <div class="Slick-Container">
+            <div class="inner-container">
+                <div class="slick-container">
+                    <!-- slider cards start -->
+                    <div class="slider-cards">
+                        <img src="./images/offer-1.jpg" />
+                    </div>
+                    <!-- slider cards End -->
+                       <!-- slider cards start -->
+                       <div class="slider-cards">
+                        <img src="./images/offer-2.jpg" />
+                    </div>
+                    <!-- slider cards End -->
+                      <!-- slider cards start -->
+                      <div class="slider-cards">
+                        <img src="./images/offer-3.jpg" />
+                    </div>
+                    <!-- slider cards End -->
+                      <!-- slider cards start -->
+                      <div class="slider-cards">
+                        <img src="./images/offer-4.jpg" />
+                    </div>
+                    <!-- slider cards End -->
+                
+                </div>
             </div>
 
+
         </div>
-        <!-- cards inner degine End -->
-        </div>
+
+        <!-- slick slider End -->
 
     </header>
 
     <!-- Header End -->
+
+
+
 
 
 
@@ -170,6 +209,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick-container').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+               
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
