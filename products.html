@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/ProductTemplate.css" />
+    <title>Produts</title>
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header>
+        <!-- navbar start -->
+        <nav>
+            <!-- Brand start -->
+            <div class="Brand">
+              <img src="./images/logo.png" />
+            </div>
+            <!-- Brand end -->
+
+
+            <div class="right-side">
+
+                <div class="userAuth">
+                    <a>LOGIN</a>
+                </div>
+                <!-- Cart Box start -->
+                <div class="Cart">
+                    <span><i class="fas fa-cart-plus"></i></span>
+                    <h5 class="badge badge-secondary">5</h5>
+                </div>
+                <!-- Cart Box End -->
+            </div>
+
+
+        </nav>
+        <!-- nav bar End -->
+
+
+    </header>
+
+    <!-- Header End -->
+
+    <!-- product details section start -->
+    <section class="main-Container">
+        <div class="inner-container">
+            <div class="fillter-container">
+                <div class="fillter-box">
+                    <!-- fillter clear All start -->
+                    <div class="f-clearAll">
+                        <div>
+                            <h3>Filters</h3>
+                        </div>
+                        <div>
+                            <a href="#">Clear All</a>
+                        </div>
+                    </div>
+                    <!-- fillter clear All end -->
+
+                    <!-- Catogery List Start -->
+                    <div class="Cateogery">
+                        <diV class="cate-title">
+                            <h4>CATEGORIES</h4>
+                        </diV>
+                        <!-- sub cateogery box start -->
+                        <div class="sub-cate">
+                            <div id="sub-icon">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="sub-cate-title">
+                                Mobile & Accessories
+                            </div>
+                        </div>
+                        <!-- sub cateogery box End -->
+                        <!-- sub catogery List start -->
+                        <div class="sub-cate-List">
+                            <div><a href="#">Power Bank Skins</a></div>
+                            <div><a href="#">Mobile</a></div>
+                            <div><a href="#">Tablets</a></div>
+                            <div><a href="#">Mobile Accessories</a></div>
+                            <div><a href="#">Tablet Accessories</a></div>
+                        </div>
+                        <!-- sub cateogery List end -->
+
+                    </div>
+                    <!-- Catogery List End -->
+
+                    <!-- slider price section start -->
+                    <div class="PriceSlider">
+                        <!-- price title start -->
+                        <div class="Price-title">
+                            <div>
+                                <h5>PRICE</h5>
+                            </div>
+                            <div>
+                                <h6>Clear All</h6>
+                            </div>
+                        </div>
+                        <!-- price title End -->
+                        <!--price slider bar start -->
+                        <div>
+                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                        </div>
+
+                        <!--price slider bar End -->
+
+                        <!-- show Price start -->
+                        <div class="show-Price-container">
+                            <p id="show-price">0</p>
+                        </div>
+                        <!-- show price End -->
+                    </div>
+
+                    <!-- slider price section End -->
+
+                    <!-- Brand Type Start -->
+                    <div class="BrandType">
+                        <div>
+                            <h3> Brand </h3>
+                        </div>
+                        <div class="DropIcon"> <i class="fas fa-angle-down"></i></div>
+                    </div>
+
+                    <div class="content" style="display: block">
+
+                        <div class="searchBrand">
+                            <input type="text" placeholder="Search Brand" onkeyup="myFunction()" id="search"
+                                name="search" />
+                        </div>
+                        <!-- Brand list start -->
+                        <div class="BrandList">
+                            <!-- Brand box start -->
+                            <div class="BrandBox">
+                                <div class="checkBox">
+                                    <input type="checkbox" checked="true" id="Nokia" name="Nokia" value="Nokia">
+                                </div>
+
+                                <div class="BrandName">
+                                    <h5>Nokia</h5>
+                                </div>
+                            </div>
+                            <!-- Brand Box End -->
+                            <!-- Brand box start -->
+                            <div class="BrandBox">
+                                <div class="checkBox">
+                                    <input checked="true" type="checkbox" value="Opp">
+                                </div>
+
+                                <div class="BrandName">
+                                    <h5>Opp</h5>
+                                </div>
+                            </div>
+                            <!-- Brand Box End -->
+
+                            <!-- Brand box start -->
+                            <div class="BrandBox">
+                                <div class="checkBox">
+                                    <input type="checkbox" checked="true" id="soney" name="soney" value="soney">
+                                </div>
+
+                                <div class="BrandName">
+                                    <h5>Soney</h5>
+                                </div>
+                            </div>
+                            <!-- Brand Box End -->
+
+
+
+
+
+                        </div>
+                        <!-- Brand List stop -->
+
+                    </div>
+                    <!-- Brand Type End -->
+
+                </div>
+            </div>
+
+
+            <!-- Product container start -->
+            <div class="products-container">
+                <!-- Breadcrumb start -->
+                <div class="BreadcrumeBox">
+                    <ul class="Breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Mobile</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb End -->
+                <!-- Short details mini paragrap start -->
+                <div class="Short-phara">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id obcaecati iure similique, in
+                        minus numquam! Maiores quo itaque aperiam? Tenetur sit magnam enim! Illum sit, sapiente
+                        repudiandae laboriosam ratione accusamus nisi maxime laborum ex dolor explicabo mollitia
+                        nesciunt? Quam quo nostrum voluptas harum corrupti explicabo libero perspiciatis est. Qui neque
+                        obcaecati repudiandae nemo voluptatem ratione nesciunt, atque quo iure magnam laborum
+                        repellendus sunt alias voluptatum rerum debitis! Quod hic quis commodi provident vitae magnam
+                        laboriosam aliquid vero sint, modi voluptatum illum. Explicabo numquam autem iste sed unde
+                        iusto, aut sit a nostrum animi fugit pariatur sequi accusamus itaque! Animi.</p>
+                </div>
+                <!-- Short details mini paragrap End -->
+
+                <!-- product Heading start -->
+                <div class="Product-Detail-data">
+                    <div>
+                        <h3>Clothing And Accessories</h3>
+                    </div>
+
+                    <div>
+                        <p>(Showing 1 – 40 products of 1,60,000 products)</p>
+                    </div>
+                </div>
+                <!-- product Heading End -->
+
+                <!-- Shorting feature Box start -->
+                <div class="ShortingFeatureBox">
+                    <div>
+                        <h4> Sort By</h4>
+                    </div>
+                    <!--shorts List start  -->
+                    <div class="shortList">
+                        <a>Popularity</a>
+                        <a>Price -- Low to High</a>
+                        <a>Price -- High to Low</a>
+                        <a>Newest First</a>
+                    </div>
+                    <!--shorts List End  -->
+                </div>
+                <!-- Shorting feature Box End -->
+            
+                   <!-- Product Cards container start-->
+                   <div class="ProductCardsContainer">
+                        
+                    <!-- Product Crds start -->
+                      <div class="cardsBox "  data-type="Opp" >
+                          
+                        <div class="ProductImage">
+                             <img src="https://rukminim1.flixcart.com/image/416/416/kjvrdzk0/mobile/i/d/x/redmi-note-9-m2003j15si-mi-original-imafzckppxnta66h.jpeg?q=70"/>
+                        </div>
+
+                        <div class="ProductDetails">
+                            <div class="ProductTitle">
+                                <a>Redmi Note 9 (Shadow Black, 128 GB)  (4 GB RAM)</a>
+                            </div>
+                            <div class="ProductRatings">
+                               
+                                   <div class="RatingNumber">
+                                       4.3 <span><i class="fas fa-star"></i></span>
+                                   </div>
+                                   <div class="TotalRating">
+                                      <p>17122 <span>Ratings</span> <span>&</span>  <span> 1281</span><span>Reviews</span></p>
+                                   </div>
+                              
+                            </div>
+
+                            <div class="productDet-list">
+                                   <p>4 GB RAM | 128 GB ROM | Expandable</p>
+                                   <p> 16.59 cm (6.53 inch) Full HD+ Display</p>
+                                   <p> 48MP Rear Camera</p>
+                                   <p> 5020 mAh Battery</p>
+                                   <p class="BrandName" data-type="Opp" >Opp</p>
+                            </div>
+                        
+                        </div>
+                        <div class="productRrice">
+                          <p><span><i class="fas fa-rupee-sign"></i></span><span>13174</span> </p>
+                         </div>
+                      </div>
+                    <!-- Product Crds End -->
+
+                               <!-- Product Crds start -->
+                               <div class="cardsBox"  data-type="Nokia">
+                          
+                                <div class="ProductImage">
+                                     <img src="https://rukminim1.flixcart.com/image/416/416/kjvrdzk0/mobile/i/d/x/redmi-note-9-m2003j15si-mi-original-imafzckppxnta66h.jpeg?q=70"/>
+                                </div>
+        
+                                <div class="ProductDetails">
+                                    <div class="ProductTitle">
+                                        <a>Redmi Note 9 (Shadow Black, 128 GB)  (4 GB RAM)</a>
+                                    </div>
+                                    <div class="ProductRatings">
+                                       
+                                           <div class="RatingNumber">
+                                               4.3 <span><i class="fas fa-star"></i></span>
+                                           </div>
+                                           <div class="TotalRating">
+                                              <p>17122 <span>Ratings</span> <span>&</span>  <span>1281</span><span>Reviews</span></p>
+                                           </div>
+                                      
+                                    </div>
+        
+                                    <div class="productDet-list">
+                                           <p>4 GB RAM | 128 GB ROM | Expandable</p>
+                                           <p> 16.59 cm (6.53 inch) Full HD+ Display</p>
+                                           <p> 48MP Rear Camera</p>
+                                           <p> 5020 mAh Battery</p>
+                                           <p >Nokia</p>
+                                    </div>
+                                
+                                </div>
+                                <div class="productRrice">
+                                  <p><span><i class="fas fa-rupee-sign"></i></span><span>13174</span> </p>
+                                 </div>
+                              </div>
+                            <!-- Product Crds End -->
+                   </div>
+                         <!-- Product Cards container start-->
+
+
+            </div>
+            <!-- Product container End -->
+        </div>
+    </section>
+
+    <!-- produts section End -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

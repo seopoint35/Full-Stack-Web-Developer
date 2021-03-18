@@ -1,0 +1,413 @@
+
+
+html{
+    font-size: 62.5%;
+}
+    
+    
+@import  "./varibles.css";
+    
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/* .main-Container */
+.main-Container{
+    padding:2rem;
+    width: 100%;
+    min-height: 60rem;
+}
+
+/* inner-container */
+
+.main-Container .inner-container{
+    width: 100%;
+    min-height: 60rem;
+    display: flex;
+
+}
+
+
+/* fillter-container */
+
+.fillter-container{
+    width: 25rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+
+}
+
+/* filter inner box */
+.fillter-container .fillter-box{
+  width: 100%;
+  min-height: 50rem;
+  border: 0.1rem solid #fff;
+}
+
+/* f-clearAll */
+
+.f-clearAll{
+    font-size: 1.6rem;
+    border-bottom: 00.1rem solid gray;
+    padding: 0.9rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f-clearAll a{
+   text-decoration: none;
+}
+
+
+/* Cateogery */
+
+.Cateogery{
+    padding: 1rem;
+    border-bottom: 0.3rem solid gainsboro;
+}
+
+
+.Cateogery .sub-cate{
+   display: flex;
+   font-size: 1.6rem;
+   padding: 1rem;
+   cursor: pointer;
+ 
+  
+ }
+
+
+ .Cateogery .sub-cate:hover >  .sub-cate-title{
+    color:  #5796F5;
+    transition: 0.3s linear;
+
+  }
+
+.Cateogery .sub-cate  #sub-icon{
+    margin-right: 1rem;
+    transform: rotate(90deg);
+
+}
+
+.Cateogery .sub-cate:hover > #sub-icon{
+   animation-name: iconRotate;
+   animation-duration: 0.3s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   color:  #5796F5;
+  
+}
+
+/* sub-cate-List */
+
+ .Cateogery .sub-cate-List{
+  display: none;
+  font-size: 1.4rem;
+  padding: 0rem 4rem;
+}
+
+.Cateogery .sub-cate-List a{
+    text-decoration: none;
+    color: #111;
+}
+
+.Cateogery .showList{
+    display: block; 
+}
+
+
+/* PriceSlider */
+
+.PriceSlider{
+    padding: 0.9rem 0.5rem;
+    font-size: 1.6rem;
+    border: 00.1rem solid gainsboro;
+}
+
+.PriceSlider .Price-title{
+  display: flex;
+  justify-content: space-between;
+ }
+
+
+ /* BrandType */
+
+ .BrandType{
+     display: flex;
+     justify-content: space-between;
+     background-color: #fff;
+     padding: 1rem;
+     cursor: pointer;
+     border: 0.1rem solid gainsboro;
+     margin-top: 0.3rem;
+ }
+
+ .BrandType  .DropIcon{
+   font-size: 1.5rem;
+   color: gray;
+}
+
+/* content */
+
+.content{
+    padding: 0.5rem;
+}
+.searchBrand{
+  margin-bottom: 3rem;
+}
+
+ .searchBrand input[type="text"]{
+     width: 100%;
+     outline: none;
+     border: none;
+     height: 3rem;
+     border-bottom: 0.1rem solid indigo;
+     background-color: transparent;
+     padding:  0rem 2rem;
+     font-size: 1.7rem;
+ }
+
+ .BrandBox{
+     display: flex;
+     align-items: center;
+ }
+
+ .BrandBox .checkBox{
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+@keyframes iconRotate{
+
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);  
+    }
+}
+
+
+
+
+
+
+
+
+
+/* products-container */
+
+.products-container{
+  width: 100rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* BreadcrumeBox start */
+
+
+.BreadcrumeBox ul.Breadcrumb {
+    padding: 1.6rem 0rem;
+    list-style: none;
+    background-color: #fff;
+  }
+
+.BreadcrumeBox  ul.Breadcrumb li {
+    display: inline;
+    font-size: 1.3rem;
+  }
+
+.BreadcrumeBox  ul.Breadcrumb li~li:before {
+    padding: 0.5rem;
+    color: black;
+    content: "/\00a0";
+  }
+
+.BreadcrumeBox  ul.Breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+
+.BreadcrumeBox  ul.Breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+/* BreadcrumeBox End */
+
+/* Product-Detail-data  start*/
+
+.Product-Detail-data{
+    display: flex;
+    align-items: center;
+}
+
+.Product-Detail-data > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Product-Detail-data End */
+
+
+/* ShortingFeatureBox start */
+
+.ShortingFeatureBox{
+    display: flex;
+    border-bottom: 0.1rem solid gray;
+    padding-bottom: 1.4rem;
+} 
+
+.ShortingFeatureBox  .shortList{
+ display: flex;
+ align-items: center;
+ margin-left: 1rem;
+ font-size: 1.4rem;
+ cursor: pointer;
+ 
+}
+
+.ShortingFeatureBox  .shortList a{
+  margin-left: 2.5rem;
+  position: relative;   
+}
+
+
+
+.ShortingFeatureBox  .shortList a::after{
+ content: "";
+ width: 0.5rem;
+ background-color: royalblue;
+ height: 0.2rem;
+ width: 5.5rem;
+ position: absolute;
+ left: 0;
+ bottom: -0.5rem;
+      
+}
+
+
+/* ProductCardsContainer */
+
+
+.ProductCardsContainer{
+    margin-top: 1rem;
+    padding: 2rem 4rem;
+ 
+}
+
+.ProductCardsContainer .cardsBox{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  margin-bottom: 3rem;
+  border-bottom: 0.1rem solid gainsboro;
+  padding-bottom: 3rem;
+ 
+
+}
+
+
+ .ProductCardsContainer .hideBox {
+    display: none;
+  }
+
+  .ProductCardsContainer .showeBox {
+    display: flex;
+  }
+
+.ProductCardsContainer .cardsBox .ProductImage{
+ 
+   width: 20rem;
+}
+
+.ProductCardsContainer .cardsBox .ProductImage img{ 
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ }
+ 
+
+
+
+.ProductCardsContainer .cardsBox .ProductDetails{
+  
+    width: 40rem;
+    font-size: 1.6rem;
+    padding-left: 0.2rem;
+ }
+
+
+
+ .ProductCardsContainer .cardsBox .productRrice{
+ 
+    width: 30rem;
+ }
+
+ .ProductRatings{
+     display: flex;
+ }
+
+ .RatingNumber{
+     margin-right: 0.5rem;
+     border: 0.1rem solid green;
+     background-color: green;
+     height: 2.5rem;
+     width: 5rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-size: 1.6rem;
+     border-radius: 0.5rem;
+ }
+
+ .RatingNumber span{
+   font-size: 1rem;
+   margin-left: 0.5rem;
+}
+
+/* productDet-list */
+
+.productDet-list{
+    line-height: 1;
+}
+
+/* productRrice */
+
+.productRrice{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
+@media(max-width:998px){
+
+    html{
+        font-size: 75%;
+    }
+}
+
+@media(max-width:998px){
+
+    html{
+        font-size: 55%;
+    }
+}
